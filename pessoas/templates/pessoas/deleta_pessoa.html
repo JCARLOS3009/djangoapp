@@ -1,0 +1,8 @@
+<!-- pessoas/templates/pessoas/deleta_pessoa.html -->
+<h1>Deletar Pessoa</h1>
+<p>Tem certeza que deseja deletar {{ pessoa.nome }}?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Deletar</button>
+</form>
+<a href="{% url 'lista_pessoas' %}">Cancelar</a>

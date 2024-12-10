@@ -1,0 +1,7 @@
+<!-- pessoas/templates/pessoas/cria_pessoa.html -->
+<h1>Criar Nova Pessoa</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Salvar</button>
+</form>

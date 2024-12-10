@@ -1,0 +1,7 @@
+<!-- pessoas/templates/pessoas/edita_pessoa.html -->
+<h1>Editar Pessoa</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Salvar</button>
+</form>
